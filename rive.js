@@ -1,3 +1,4 @@
+let progress = 5;
 const stateMachine = "State Machine 1";
 
 const riveInstance = new rive.Rive({
@@ -23,4 +24,7 @@ function onLoadHandler() {
 	// Prevent a blurry canvas by using the device pixel ratio
 	riveInstance.resizeDrawingSurfaceToCanvas();
 	inputs = riveInstance.stateMachineInputs(stateMachine);
+
+	step = inputs.find((i) => i.name === "step");
+	step.value = progress;
 }
