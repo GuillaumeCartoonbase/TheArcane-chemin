@@ -1,4 +1,4 @@
-let progress = 5;
+let progress = 2;
 const stateMachine = "State Machine 1";
 
 const riveInstance = new rive.Rive({
