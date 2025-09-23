@@ -1,4 +1,11 @@
 let progress = 2;
+// 0 - 1 - 2 - 3 - 4, en fonction de quoi à montrer
+// 0 : vue initiale (statique)
+// 1 : animation premier step
+// 2 : animation second step
+// 3 : anuimation troisieme step
+// 4 : vue finale (statique)
+
 const stateMachine = "State Machine 1";
 
 const riveInstance = new rive.Rive({
