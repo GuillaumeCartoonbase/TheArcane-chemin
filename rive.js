@@ -35,10 +35,3 @@ function onLoadHandler() {
 	step = inputs.find((i) => i.name === "step");
 	step.value = progress;
 }
-
-function progresser(stepNum) {
-	inputs = riveInstance.stateMachineInputs(stateMachine);
-
-	step = inputs.find((i) => i.name === "step");
-	step.value = stepNum;
-}
